@@ -1,0 +1,87 @@
+.landing_container{
+  height: 300px;
+  width: 300px;
+  animation: img_rotate 3s ease-in infinite;
+  background: transparent
+}
+.landing_img{
+  height: 300px;
+  width: 300px;
+  background: url('./assets/andrew.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@keyframes img_rotate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.blinker{
+  border-top: 2px solid rgb(62, 157, 62);
+  animation: blink 1.5s linear infinite;
+  margin: 0px;
+  padding: 0px;
+}
+
+@keyframes blink{
+  from{
+    border-top: 2px solid rgb(62, 157, 62);
+  }
+  to{
+    border-top: 2px solid transparent;
+  }
+}
+.app{
+  min-height: 100vh;
+  height: auto;
+  padding-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+.project_image_container{
+  height: 40vh;
+}
+
+.skill_container{
+  max-height: 35vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+ 
+}
+.skill_container::-webkit-scrollbar{
+  width: 8px;
+}
+.skill_container::-webkit-scrollbar-track{
+  background: rgb(95, 109, 123);
+  margin-left: 10px;
+}
+.skill_container::-webkit-scrollbar-thumb{
+  background: rgb(24, 148, 88);
+  border-radius: 10px;
+}
+.h-center{
+  min-height: 75vh;
+}
+@media screen  and (min-width:470px){
+  .over_md{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) !important;
+    margin-right: 5px;
+    justify-items: center;
+    margin-top: 0px;
+  }
+}
+@media screen  and (min-width:900px){
+  .over_md{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) !important;
+    justify-items: center;
+    margin-right: 5px;
+  }
+}
