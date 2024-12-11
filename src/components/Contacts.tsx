@@ -40,7 +40,7 @@ function Contacts() {
                 'ajvUkgMFOkz3gFVgq' // Replace with your EmailJS user ID
             )
             .then(
-                (result:any) => {
+                () => {
                     setErr({success:true,failed:false})
                     setTimeout(()=>{
                         setErr({success:false,failed:false})

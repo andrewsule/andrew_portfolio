@@ -1,4 +1,3 @@
-import React from 'react'
 import react from '../assets/react.svg'
 import wordpress from '../assets/wordpress.png'
 import ms365 from '../assets/Microsoft-Power-Apps-logo.webp'
