@@ -12,6 +12,19 @@ function Experince() {
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{delay:0.5,duration:1}}>
+
+            <div className='rounded-md bg-gray-600 p-5 md:w-1/2'>
+                <p className='font-bold text-green-500'>2024-Current <br/>Africa Global Logistics</p>
+                <h1 className=' font-serif mb-2 text-gray-200 font-bold'>IT Intern</h1>
+
+                <ul>
+                
+                    <li className='  mb-2 text-gray-200 list-disc ml-2'>Give user support</li>
+                    <li className='  mb-2 text-gray-200 list-disc ml-2'>Help in Network configurations</li>
+                    <li className='  mb-2 text-gray-200 list-disc ml-2'>Migration of systems from windows 10 to 11</li>
+                </ul>
+            </div>
+            
             <div className='rounded-md bg-gray-600 p-5 md:w-1/2'>
                 <p className='font-bold text-green-500'>2023-2024 <br/>Solitaire Infosys</p>
                 <h1 className=' font-serif mb-2 text-gray-200 font-bold'>Software Developer</h1>
@@ -22,6 +35,14 @@ function Experince() {
                 </ul>
             </div>
 
+           
+      </motion.div>
+
+      <motion.div className="flex  justify-between gap-2 mb-7 md:flex-row flex-col  "
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      transition={{delay:0.5,duration:1}}>
+
             <div className='rounded-md bg-gray-600 p-5 md:w-1/2'>
                 <p className='font-bold text-green-500'>2022-Current<br/>Stella Tanganyika Pham.</p>
                 <h1 className=' font-serif mb-2 text-gray-200 font-bold'>IT Specialist</h1>
@@ -31,12 +52,7 @@ function Experince() {
                     <li className='  mb-2 text-gray-200 list-disc ml-2'>Managed all the IT operations</li>
                 </ul>
             </div>
-      </motion.div>
-
-      <motion.div className="flex  justify-between gap-2 mb-7 md:flex-row flex-col  "
-      initial={{opacity:0}}
-      animate={{opacity:1}}
-      transition={{delay:0.5,duration:1}}>
+            
             <div className='rounded-md bg-gray-600 p-5 md:w-1/2'>
                 <p className='font-bold text-green-500'>2023-current <br/> Freelancing</p>
                 <h1 className=' font-serif mb-2 text-gray-200 font-bold'>Software Developer</h1>
