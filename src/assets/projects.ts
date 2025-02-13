@@ -4,6 +4,7 @@ import mofas from './mofass.png'
 import opari from './opari.png'
 import booking from './booking.jpg'
 import myproject from './personal.png'
+import airtime from './airtime.jpg'
 
 
 const projects = [
@@ -44,8 +45,14 @@ const projects = [
     "description": "This web application was created to showcase my skills, experience, and educational background. It also serves as a platform for potential clients or collaborators to easily reach out for further details on projects or partnerships.",
     "image": myproject,
     "technologies": ["React Js", "Vite"],
+},
+{
+    "id": 7,
+    "name": "Airtime Requests",
+    "description": "This is an application that was designed for an organisation that helps new users request for airtime and undergo a series of approvals till the final approval has been granted after which a the approval form is automatically sent to the user via their emails.",
+    "image": airtime,
+    "technologies": ["Power Apps", "Powewr Automate"],
 }
-
 
 ]
 
