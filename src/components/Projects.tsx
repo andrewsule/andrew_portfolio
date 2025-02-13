@@ -54,6 +54,7 @@ function Projects() {
                                 width={500}
                                 height={500}
                                 className='h-full rounded-md w-full '
+                                loading='lazy'
                             />
                        </motion.div>
 
