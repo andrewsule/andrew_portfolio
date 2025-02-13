@@ -50,7 +50,7 @@ function Projects() {
                        animate={{opacity:1}}
                        transition={{delay:1.5,duration:1}}>
                         <img 
-                                src={projects[count].image} alt=''
+                                src={`${projects[count].image}?v=${Date.now()}`} alt=''
                                 width={500}
                                 height={500}
                                 className='h-full rounded-md w-full '
