@@ -7,7 +7,7 @@ function Projects() {
     const [count,setCount] = useState<number>(0)
 
     const increase = ()=>{
-       if(count<=4){
+       if(count<=5){
         setCount(count+1)
        }
        else{
@@ -19,7 +19,7 @@ function Projects() {
          setCount(count-1)
         }
         else{
-         setCount(5)
+         setCount(6)
         }
      }
   return (
