@@ -2,7 +2,7 @@ import {motion} from 'framer-motion'
 
 function Services() {
   return (
-    <div className='flex justify-evenly flex-col h-5/6 items-center'>
+    <div className='flex justify-evenly flex-col h-5/6 items-center mb-28'>
 
         <div className='flex items-center justify-center mb-10 '>
             <div className='flex gap-10 md:w-4/6 md:flex-row flex-col md:mx-0 mx-8 '>

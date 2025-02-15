@@ -30,7 +30,7 @@ function Projects() {
             initial={{x:'-100vw',opacity:0}}
             animate={{x:0,opacity:1}}
             transition={{delay:0.5,duration:1.5,type:"spring", stiffness:20}}>
-                     <div className=' p-5 md:w-1/2 w-full'>
+                     <div className=' p-5 md:w-2/5 w-full'>
                         <h1 className='font-bold text-4xl font-serif mb-9 text-gray-100 text-shadow'>0{projects[count].id}</h1>
                         <h1 className='text-3xl font-bold text-green-400 font-serif mb-5'>{projects[count].name}</h1>
                         <p className='  text-gray-200 mb-3 text-justify text-lg'>
@@ -44,15 +44,15 @@ function Projects() {
                         
                     </div>
 
-                    <div className='md:w-1/2 w-full  '>
+                    <div className='md:w-3/5 w-full  '>
                        <motion.div className='project_image_container md:w-full ml-4 md:mx-0 w-11/12'
                        initial={{opacity:0}}
                        animate={{opacity:1}}
                        transition={{delay:1.5,duration:1}}>
                         <img 
                                 src={`${projects[count].image}?v=${Date.now()}`} alt=''
-                                width={500}
-                                height={500}
+                                width={600}
+                                height={400}
                                 className='h-full rounded-md w-full '
                             />
                        </motion.div>

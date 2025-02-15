@@ -1,24 +1,32 @@
 .landing_container{
   height: 300px;
   width: 300px;
-  animation: img_rotate 3s ease-in infinite;
+  animation: img_rotate 15s linear infinite;
   background: transparent
 }
 .landing_img{
   height: 300px;
   width: 300px;
-  background: url('./assets/andrew.png');
+  background: url('./assets/IMG_1059.JPG');
   background-size: cover;
-  background-position: center;
+  
   background-repeat: no-repeat;
+ 
 }
 @keyframes img_rotate {
-  from{
+  0%{
     transform: rotate(0deg);
+    border-color: rgb(62, 157, 62);
   }
-  to{
+  50%{
+    transform: rotate(180deg);
+    border-color: rgb(205, 208, 206);
+  }
+  100%{
     transform: rotate(360deg);
+    border-color: rgb(90, 174, 90);
   }
+
 }
 
 .blinker{

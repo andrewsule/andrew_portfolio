@@ -21,6 +21,7 @@ function Contacts() {
         message: '',
         user_email: '',
     });
+    const [status,setStatus]= useState<string>("Send")
 
     const [err, setErr]=useState({
         success:false,
@@ -33,6 +34,7 @@ function Contacts() {
    
     const sendEmail = (e:any) => {
         e.preventDefault();
+        setStatus("Sending ...")
         emailjs.send(
                 'service_0pahyc9', // Replace with your EmailJS service ID
                 'template_zddaahe', // Replace with your EmailJS template ID
@@ -46,25 +48,27 @@ function Contacts() {
                         setErr({success:false,failed:false})
                     },4000)
                     setFormData({
-                        user_name: ' ',
-                        user_phone: ' ',
-                        message: ' ',
-                        user_email: ' ',
+                        user_name:"",
+                        user_phone:"",
+                        message:"",
+                        user_email: "",
                     });
+                    setStatus("Send")
                     
                 },
                 (error:any) => {
                     console.error(error.text);
                     setErr({success:false,failed:true})
                     setFormData({
-                        user_name: ' ',
-                        user_phone: ' ',
-                        message: ' ',
-                        user_email: ' ',
+                        user_name: "",
+                        user_phone: "",
+                        message: "",
+                        user_email: "",
                     });
                     setTimeout(()=>{
                         setErr({success:false,failed:false})
                     },4000)
+                    setStatus("Send")
                 }
             );
             setFormData({
@@ -93,9 +97,9 @@ function Contacts() {
                     <input type='text'required  className='rounded-md mb-4 outline-none focus:outline-none w-full p-3 text-gray-100 bg-gray-800' placeholder='Email' name="user_email" onChange={handleChange}/>
 
                     <textarea placeholder='Enter a message'  className='rounded-md mb-4 outline-none focus:outline-none w-full p-3 text-gray-100 bg-gray-800' name="message" onChange={handleChange}/>
-                    <button className='bg-green-400 px-4 py-3 text-white rounded-lg'>Send</button>
-                    {err.success && <span className='text-green-600 mx-5 text-lg'>Details have been sent successfully</span>}
-                    {err.failed && <span className='text-red-600 mx-5 text-lg'>Failed to send your details.<br/>Please check your connection</span>}
+                    <button className='bg-green-400 px-4 py-3 text-white rounded-lg'>{status}</button>
+                    {err.success && <span className='text-green-600 mx-2 text-lg'>Details have been sent successfully</span>}
+                    {err.failed && <span className='text-red-600 mx-2 text-lg'>Error occured.Please check your connection</span>}
                 </form>
              </div>
 

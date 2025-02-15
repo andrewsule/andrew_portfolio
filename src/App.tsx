@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className='bg-slate-700 app '>
+    <div className='bg-slate-700 app'>
         <BrowserRouter>
           <Navbar/>
           <Routes>
@@ -23,6 +23,7 @@ function App() {
             <Route path='/projects' element={<Projects/>} />
           </Routes>
         </BrowserRouter>
+        <p className='text-gray-400 text-center italic'>Copyrights © 2025 All rights reserved by Asante.</p>
     </div>
   )
 }

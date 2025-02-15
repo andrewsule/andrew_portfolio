@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 function Home() {
   
   return (
-    <div className=' flex justify-evenly flex-col  h-center  ' >
+    <div className=' flex justify-evenly flex-col  h-center antialiased ' >
        <div className='flex md:justify-evenly items-center font-serif flex-col-reverse md:px-3 px-3 md:flex-row md:gap-0 gap-6'>
 
              <div>
@@ -66,7 +66,7 @@ function Home() {
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{delay:1,duration:1,}} >
-                <motion.div className='landing_container border-b border-b-green-400 rounded-full shadow-inner '
+                <motion.div className='landing_container   rounded-full shadow-inner border-dashed border-t-2 border-l-2'
                  initial={{opacity:0}}
                  animate={{opacity:1}}
                  transition={{delay:0.5,duration:1,}}>
@@ -77,7 +77,7 @@ function Home() {
 
        </div>
 
-       <div className='grid  md:grid-cols-4 grid-cols-3  text-sm md:text-lg mt-12 md:mt-5  md:justify-items-center gap-5 md:w-9/12 md:self-center w-full   mx-1 over_md '>
+       <div className='grid  md:grid-cols-4 grid-cols-3  text-sm md:text-lg mt-12 md:mt-5  md:justify-items-center gap-5 md:w-9/12 md:self-center w-full   mx-1 over_md mb-16'>
           
                 <div className='flex items-center gap-2 col-span-1'>
                     <motion.p
