@@ -23,7 +23,7 @@ function App() {
             <Route path='/projects' element={<Projects/>} />
           </Routes>
         </BrowserRouter>
-        <p className='text-gray-400 text-center italic'>Copyrights © 2025 All rights reserved by Asante.</p>
+        <p className='text-gray-400 text-center italic'>Copyrights © 2025 All rights reserved.</p>
     </div>
   )
 }
