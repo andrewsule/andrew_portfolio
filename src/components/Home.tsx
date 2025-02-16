@@ -31,6 +31,7 @@ function Home() {
                     className='text-green-400 text-6xl'>
                         <TypeAnimation
                         sequence={['Andrew Yengi',5000,'Andrew Sule',3000]}
+
                         repeat={Infinity}/>
                 </motion.h1>
 
@@ -52,7 +53,7 @@ function Home() {
                 animate={{x:0}}
                 transition={{duration:1, type:"spring",delay:0.5}} className='mt-6 '>
                     <button className='rounded-3xl border border-green-400 text-green-300 py-2 px-4 font-sans text-sm mr-4  mt-5'>
-                        <a href='/RESUME_ANDREW_YENGI.pdf' download>
+                        <a href='src/assets/Andrew_Yengi_Resume.pdf' download>
                         Download CV
                         </a>
                         
