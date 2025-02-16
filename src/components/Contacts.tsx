@@ -80,7 +80,7 @@ function Contacts() {
     };
     
   return (
-    <div className='flex items-center justify-center h-center '>
+    <div className='flex items-center justify-center h-center mb-10'>
     <motion.div className='flex gap-10 md:w-4/6 md:flex-row flex-col w-full'
     initial={{y:'-50vh',opacity:0}}
     animate={{y:0,opacity:1}}

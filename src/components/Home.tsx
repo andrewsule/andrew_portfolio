@@ -1,5 +1,7 @@
 
 import {motion} from 'framer-motion'
+import CountUp from 'react-countup'
+import { TypeAnimation } from 'react-type-animation'
 
 
 function Home() {
@@ -27,7 +29,9 @@ function Home() {
                     animate={{x:0,opacity:1}} 
                     transition={{delay:0.5,duration:1.5,stiffness:10}}
                     className='text-green-400 text-6xl'>
-                        Andrew Yengi
+                        <TypeAnimation
+                        sequence={['Andrew Yengi',5000,'Andrew Sule',3000]}
+                        repeat={Infinity}/>
                 </motion.h1>
 
                 <motion.div
@@ -81,25 +85,46 @@ function Home() {
           
                 <div className='flex items-center gap-2 col-span-1'>
                     <motion.p
-                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>2</motion.p>
+                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>
+                        <CountUp
+                        start={1}
+                        end={2}
+                        duration={2}
+                        />
+                    </motion.p>
                     <p className='text-gray-200'>Years of <br/>Experience</p>
                 </div>
 
                 <div className='flex items-center gap-2 col-span-1'>
                     <motion.p
-                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>8</motion.p>
+                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>
+                        <CountUp
+                        end={8}
+                        duration={3}
+                        />
+                    </motion.p>
                     <p className='text-gray-200'>Projects <br/> Completed</p>
                 </div>
           
                 <div className='flex items-center gap-2 col-span-1'>
                     <motion.p 
-                    initial={{}}className=' text-gray-100 md:text-6xl text-4xl'>6</motion.p>
+                    initial={{}}className=' text-gray-100 md:text-6xl text-4xl'>
+                        <CountUp
+                        end={6}
+                        duration={3}
+                        />
+                    </motion.p>
                     <p className='text-gray-200'>Technologies <br/> Mastered</p>
                 </div>
 
                 <div className='flex items-center gap-2 col-span-1'>
                     <motion.p
-                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>240</motion.p>
+                    initial={{}} className=' text-gray-100 md:text-6xl text-4xl'>
+                        <CountUp
+                        end={240}
+                        duration={3.5}
+                        />
+                    </motion.p>
                     <p className='text-gray-200'>Students <br/> Trained</p>
                 </div>
         
