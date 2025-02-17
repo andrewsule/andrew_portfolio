@@ -61,7 +61,7 @@ function Home() {
 
                     <a 
                         href='https://www.linkedin.com/in/andrew-yengi-0b4a65205?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIoMxhSEtSny168RYeGDqdw%3D%3D'
-                        className='rounded-full border border-gray-300 text-green-500 font-bold text-sm p-1'>
+                        className='rounded-full border border-gray-300 text-green-500 font-bold text-sm p-1 hover:bg-green-400 hover:text-white hover:border-green-400'>
                         in
                     </a>
                 </motion.div>
