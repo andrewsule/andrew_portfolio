@@ -52,7 +52,7 @@ function Home() {
                 initial={{x:'-100vw'}}
                 animate={{x:0}}
                 transition={{duration:1, type:"spring",delay:0.5}} className='mt-6 '>
-                    <button className='rounded-3xl border border-green-400 text-green-300 py-2 px-4 font-sans text-sm mr-4  mt-5'>
+                    <button className='rounded-3xl border border-green-400 text-green-300 py-2 px-4 font-sans text-sm mr-4  mt-5 hover:bg-green-400 hover:text-white'>
                         <a href='src/assets/Andrew_Yengi_Resume.pdf' download>
                         Download CV
                         </a>
